@@ -23,6 +23,18 @@ import User from '../models/User';
 
       return res.json(notifications);
     }
+
+    async update(req, res){
+      const notify = await Notification.findByIdAndUpdate(
+          req.params.id,
+          { read: true },
+          { new: true}
+        );
+
+        return res.json(notify);
+
+
+    }
   }
 
   export default new NotificationController();
