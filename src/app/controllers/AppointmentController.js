@@ -72,6 +72,11 @@ import File from '../models/File';
        * check if provider_id is valid
        */
       const isProvider = await User.findOne({where: { id:provider_id , provider: true}})
+
+      if (provider_id === req.userId) {
+        return res.status(401).json({
+          error:"Providers can not create appointments with yourself"})
+      }
       if (!isProvider) {
         return res.status(401).json({
           error:"You can only create appointments with providers"})

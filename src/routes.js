@@ -8,6 +8,7 @@ import FileController from './app/controllers/FileController';
 import ProviderController from './app/controllers/ProviderController';
 import AppointmentController from './app/controllers/AppointmentController';
 import ScheduleController from './app/controllers/ScheduleController';
+import NotificationController from './app/controllers/NotificationController'
 
 import AuthMiddleware from './app/middlewares/auth';
 
@@ -26,5 +27,7 @@ const upload = multer(MulterConfig);
 
   routes.get('/schedule', ScheduleController.index);
   routes.post('/appointment', AppointmentController.store);
+
+  routes.get('/notifications', NotificationController.index);
 
 export default routes;
