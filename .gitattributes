@@ -1,0 +1,4 @@
+cat .gitattributes
+
+.js linguist-language=Node
+.css linguist-language=Node
