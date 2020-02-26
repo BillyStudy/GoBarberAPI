@@ -18,7 +18,7 @@ import Queue from '../../lib/Queue';
       const appointment = await Appointment.findAll({
         where:{ user_id: req.userId, canceled_at: null},
         onder: ['date'],
-        attributes:['id', 'date'],
+        attributes:['id', 'date', 'past', 'cancelable'],
         limit: 15,
         offset: (page - 1 ) * 15,
         include: [
