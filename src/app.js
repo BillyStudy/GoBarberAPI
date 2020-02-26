@@ -25,3 +25,4 @@ class App {
 export default new App().server;
 
 // docker run --name mongobarber -p 27017:27017 -d -t mongo
+// docker run --name redisbarber -p 6379:6379 -d -t redis:alpine

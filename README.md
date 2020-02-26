@@ -8,19 +8,9 @@
 
 <p align="center">“The back will be right!”</blockquote>
 
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-01?color=%2304D361">
+## Sobre o projeto
 
-</p>
-
-## :Sobre o projeto
-
-Crie uma aplicação para armazenar dados de uma aplicação de barbearia.
-
-
-```
-
-```
+Se trata de uma aplicação para armazenar dados de uma aplicação de barbearia.
 
 ---
 
